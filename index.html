@@ -126,9 +126,14 @@ a:active {
 }
 .portion.two {
   background-image: url('https://www.worldatlas.com/r/w728-h425-c728x425/upload/a7/b8/01/shutterstock-564527287.jpg');
-    margin: 0;
-    background-attachment: fixed;
-    max-width: 100%;
+  background-size: 100% 100%;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .portion.two {
+  background-image: url('https://www.worldatlas.com/r/w728-h425-c728x425/upload/a7/b8/01/shutterstock-564527287.jpg');
+  width: 100%;
+}
 }
 .portion h2 {
   color: white;
